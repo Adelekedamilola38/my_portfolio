@@ -1,0 +1,247 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leke's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar">
+
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+        <div class="Logo">
+            <h3>LEKE</h3>
+        </div>
+
+        <div class="search-wrapper">
+            <div class="search-container">
+
+                <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2"/>
+                </svg>
+
+                <input type="text" id="searchInput" placeholder=" " required/>
+                <label for="searchInput" class="search-label">Search...</label>
+                <button id="searchBtn" type="button">GO</button>
+            </div>
+
+            <ul id="suggestions" class="suggestions-list"></ul>
+        </div>   
+    </div>
+
+    <header class="hero">
+        <h2>Hello, <span>I'm</span></h2>
+        <h1><span>ADELEKE DAMILOLA</span></h1>
+        <p>Full-Stack Product Developer</p>
+        <button class="cta-btn" id="click-btn">View My Card Designs</button>
+    </header>
+
+    <div class="hero-image">
+        <img src="images/Senate-building.jpg" alt="Unilag Senate building picture">
+    </div>
+
+    <div class="about-me">
+        <h3>About Us</h3>
+        <p>A graduate of Bachelor of Science in Insurance; <span>University of Lagos, Nigeria.</span>
+        <br>Developer with a strong foundation in <b>back-end development</b> and also have a good knowledge of <b>front-end developement, </b>and <b>UI/UX.</b> Specializes in various language skills such as; <span>Figma, HTML, CSS, Javascripts, React, Python, Django, SQL.</span>
+    </p>
+    </div>
+
+    <section class="services-section" aria-labelledby="services-title">
+        <div class="services-container">
+            <h2 id="services-title" class="section-title">What I Do</h2>
+            <p class="section-sub">My <span>services</span></p>
+
+            <div class="services-grid" role="list">
+                <article class="service-card" role="listitem">
+                    <div class="card-icon" aria-hidden="true">
+                        <!-- UI/UX SVG -->
+                         <img src="images/UIUX-designer.jpg" alt="card-icon">
+                    </div>
+                    <h3 class="card-title">UI/UX Designer</h3>
+                    <p class="card-desc">Designing clean interfaces, intuitive user flows and high-fidelity prototypes using Figma & Canva.</p>
+                </article>
+
+                <article class="service-card" role="listitem">
+                    <div class="card-icon" aria-hidden="true">
+                        <img src="images/react.jpg" alt="front-end developer">
+                    </div>
+                    <h3 class="card-title">Front-End Developer</h3>
+                    <p class="card-desc">Creating a clean, modern, and user-friendly interfaces using HTML, CSS, Javascript, and React.</p>
+                </article>
+
+                <article class="service-card" role="listitem">
+                    <div class="card-icon" aria-hidden="true">
+                        <img src="images/711.jpg" alt="back-end developer">
+                    </div>
+                    <h3 class="card-title">Back-End Developer</h3>
+                    <p class="card-desc">Responsible for designing, developing, and maintaining the server-side infrastructure of applications.</p>
+                </article>
+
+                <article class="service-card" role="listitem">
+                    <div class="card-icon" aria-hidden="true">
+                        <img src="images/app2.jpg" alt="app developer">
+                    </div>
+                    <h3 class="card-title">App Development</h3>
+                    <p class="card-desc">Designing intuitive interfaces, building functional logic, integrating APIs, and ensuring performance across multiple platforms.</p>
+                </article>
+
+                <article class="service-card" role="listitem">
+                    <div class="card-icon" aria-hidden="true">
+                        <img src="images/testing2.jpg" alt="functional & QA testing">
+                    </div>
+                    <h3 class="card-title">Functional & QA Testing</h3>
+                    <p class="card-desc">Evaluating software to ensure it works exactly as expected giving reliability, error-free, and ready for users.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <h2><span>Projects</span> I have done</h2>
+        <p>These are the project i have created.</p>
+
+        <div class="slider">
+
+            <input type="radio" name="slider" id="radio1" checked>
+            <input type="radio" name="slider" id="radio2">
+            <input type="radio" name="slider" id="radio3">
+
+            <div class="slides">
+                <div class="slides-group">
+                    <div class="project-card"><img src="images/project1.png" alt="project1"></div>
+                    <div class="project-card"><img src="images/portfolio-services.png" alt="project2"></div>
+                    <div class="project-card"><img src="images/uswap-project2.png" alt="project3"></div>
+                </div>
+                <div class="slides-group">
+                    <div class="project-card"><img src="" alt=""></div>
+                    <div class="project-card"><img src="" alt=""></div>
+                    <div class="project-card"><img src="" alt=""></div>
+                </div>
+                <div class="slides-group">
+                    <div class="project-card"><img src="" alt=""></div>
+                    <div class="project-card"><img src="" alt=""></div>
+                    <div class="project-card"><img src="" alt=""></div>
+                </div>       
+            </div>
+
+            <div class="navigation">    
+                <label for="radio1" class="bar"></label>
+                <label for="radio2" class="bar"></label>
+                <label for="radio3" class="bar"></label>
+            </div>          
+        </div>        
+    </section>
+
+    <section id="experience">
+        <h2>Work <span>Experience</span></h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>QA Collaboration - Discord Testing Team</h3>
+                    <span class="timeline-date">Remote</span>
+                    <ul>
+                        <li>Worked in a distributed test team alongside a software engineer using Discord for coordination.</li>
+                        <li>Perfomed <b>manuel functional testing</b> on a web applications, identifying and documenting bugs.</li>
+                        <li>Collaborated with the team to log issues clearly for fixes.</li>
+                        <li>Retested builds to confirm bug resolution and feature stability.</li>
+                        <li>Gained hands-on experience in <b>team-based QA workflows</b> and agile-style communication.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Data Annotation Projects</h3>
+                    <span class="timeline-date">Independent Contributor</span>
+                    <ul>
+                        <li>Completed <b>annotation tasks</b> for AI datasets with focus on accuracy and consistency.</li>
+                        <li>Followed structured guidelines to prepare high-quality labeled data for model training.</li>
+                        <li>Learned the importance of <b>attention to detail and data integrity</b> in AI workflows.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>UI/UX Design & Logo Design - Figma/Canva</h3>
+                    <span class="timeline-date">Designer</span>
+                    <ul>
+                        <li>Created <b>user interface mockups</b> and layouts in Figma for personal apps and websites.</li>
+                        <li>Experimented with <b>design systems, color palettes, and typography</b>.</li>
+                        <li>Improved visual design usability through multiple iterations.</li>
+                        <li>Designed logos and branding assets for personal projects.</li>
+                        <li>Built a consistent identity across project presentations and portfolio.</li>
+                        <li>Practiced <b>basic graphic design principles</b> (balance, contrast, color harmony).</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p class="subtitle">Let's work <span>together</span></p>
+
+        <div class="contact-container">
+
+            <form  class="contact-form">
+                <input type="text" name=""  placeholder="Your Name" required>
+                <input type="text" name="" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Get in touch</h3>
+                <p>Email: <a href="mailto:Adelekedamilola38@gmail.com">adelekedamilola38@gmail.com</a></p>
+                <p>Phone: +234 816 320 3624</p>
+
+                <div class="social-links">
+                    <a href="https://x.com/lekeishere?s=21" target="_blank" class="social-item">
+                        <img src="images/square-x-twitter-brands-solid-full.svg" alt="twitter" class="social-icon">
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://github.com/Adelekedamilola38" target="_blank" class="social-item">
+                        <img src="images/square-github-brands-solid-full.svg" alt="github" class="social-icon">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/damilola-joseph-40044a219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-item">
+                        <img src="images/square-linkedin-brands-solid-full.svg" alt="linkedln" class="social-icon">
+                        <span>Linkedln</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Damilola. All rights reserved.</p>
+    </footer>"
+    <script src="script.css"></script>
+</body>
+
+
+ 
+
+
+</html>
