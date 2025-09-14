@@ -10,6 +10,17 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .logo h3 {
     position: absolute;
     top: 8%;
@@ -299,9 +310,9 @@ body {
     display: flex;
     flex-direction: row;
     margin: 18px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: stretch;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -744,6 +755,14 @@ footer {
         padding: 20px;
     }
 
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 16px;
+    }
+
     .hero-image {
         width: 90%;
         max-width: 300px;
@@ -753,5 +772,44 @@ footer {
     .services-grid {
         grid-template-columns: 1fr;
     }
+
+    .project-card {
+        width: 48%;
+    }
     
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-wrapper {
+        position: static;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
