@@ -774,13 +774,18 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 20px;
+        top: 60px;
         left: 0;
         background: rgba(15, 32, 39, 0.95);
         width: 200px;
         border-radius: 0 0 8px 8px;
         box-shadow: 0 6px 12px rgba(0,0,0,0.4);
         padding: 15px;
+    }
+
+    .logo {
+        margin-right: 36px;
+        flex: 1;
     }
 
     .nav-links.show {
