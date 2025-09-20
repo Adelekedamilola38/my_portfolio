@@ -94,17 +94,20 @@ overlay.classList.add("overlay");
 document.body.appendChild(overlay);
 
 burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
     navLinks.classList.toggle("show");
     overlay.classList.toggle("show");
 });
 
 overlay.addEventListener("click", () => {
+    burger.classList.remove("active");
     navLinks.classList.remove("show");
     overlay.classList.remove("show");
 });
 
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
+        burger.classList.remove("active");
         navLinks.classList.remove("show");
         overlay.classList.remove("show");
     });

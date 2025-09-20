@@ -763,6 +763,24 @@ footer {
     z-index: 1001;
 }
 
+.burger span {
+    display: block;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5pxx, 5px);
+}
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 
 @media (max-width: 768px) {
     .burger {
@@ -778,9 +796,11 @@ footer {
         left: -300px;
         background: rgba(15, 32, 39, 0.98);
         width: 240px;
+        height: 100%;
         border-radius: 0 0 8px 8px;
         box-shadow: 3px 0 10px rgba(0,0,0,0.5);
-        padding: 60px 20px;
+        padding: 20px;
+        transition: left 0.4s ease;
         z-index: 1000;
     }
 
