@@ -580,11 +580,13 @@ input:checked + label.bar {
     padding: 70px 20px;
     text-align: center;
     color: #fff;
-    background: rgba(225, 255, 255, 0.2);
+    background: transparent;
     border-top: 1px solid rgba(225, 255, 255, 0.05);
     border-bottom: 1px solid rgba(225, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     overflow: hidden;
+    z-index: 1;
+    
 }
 
 .experience-title span {
@@ -612,29 +614,12 @@ input:checked + label.bar {
     margin: 0;
     padding-left: 15px;
     font-size: 12px;
-    color: #ddd;
+    color: #e6eef2;
     line-height: 1.4;
+    list-style-type: disc;
 }
 
-.star {
-    position: absolute;
-    width: 3px; height: 3px;
-    background: #00b3cc;
-    border-radius: 50%;
-    opacity: 0;
-    animation: twinkle 2s infinite;
-}
 
-@keyframes twinkle {
-    0%, 100% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.3);
-    }
-}
 
 .contact {
     text-align: center;
@@ -769,26 +754,44 @@ footer {
     line-height: 2px;
 }
 
+.burger {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    .burger {
+        display: block;
+        z-index: 1100;
     }
 
     .nav-links {
-        display: flex;
+        display: none;
         flex-direction: column;
-        gap: 12px;
-        position: static;
-        transform: none;
-        width: 100%;
-        justify-content: center;
-        padding: 8px 0;
-        background: transparent;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(15, 32, 39, 0.95);
+        width: 200px;
+        border-radius: 0 6px 12px rgba(0,0,0,0.4);
+        padding: 15px;
+    }
 
+    .nav-links.show {
+        display: flex;
+    }
 
+    .nav-links li {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
     }
 
     .search-container {

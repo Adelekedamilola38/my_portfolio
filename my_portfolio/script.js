@@ -87,28 +87,9 @@ setInterval(() => {
     }, 500);
 }, 5000);
 
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("navLinks");
 
-document.addEventListener("DOMContentLoaded", () => {
-    const section = document.querySelector(".experience-section");
-    const starContainer = document.createElement("div");
-    starContainer.classList.add("stars");
-    section.appendChild(starContainer);
-
-    for (let i = 0; i < 25; i++) {
-        const star = document.createElement("div");
-        star.classList.add("star");
-        star.style.top = '${Math.random() * 100}%';
-        star.style.left = '${Math.random() * 100}%';
-        starContainer.appendChild(star);
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            starContainer.style.opacity = entry.isIntersecting ? "1" : "0";
-            starContainer.style.transition = "opacity is ease";
-        });
-    }, { threshold: 0.3});
-
-    observer.observe(section);
-
+burger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
 });
