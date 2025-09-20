@@ -764,6 +764,10 @@ footer {
 
 
 @media (max-width: 768px) {
+
+    .logo {
+        display: none;
+    }
     .burger {
         display: block;
         z-index: 1100;
@@ -787,7 +791,7 @@ footer {
 
     .nav-links li {
         margin: 10px 0;
-        text-align: left;
+        text-align: right;
     }
 
     .nav-links li a {
