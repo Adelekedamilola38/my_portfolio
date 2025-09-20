@@ -89,7 +89,23 @@ setInterval(() => {
 
 const burger = document.getElementById("burger");
 const navLinks = document.getElementById("navLinks");
+const overlay = document.createElement("div");
+overlay.classList.add("overlay");
+document.body.appendChild(overlay);
 
 burger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
+    overlay.classList.toggle("show");
+});
+
+overlay.addEventListener("click", () => {
+    navLinks.classList.remove("show");
+    overlay.classList.remove("show");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+        overlay.classList.remove("show");
+    });
 });
