@@ -799,7 +799,7 @@ footer {
         height: 100%;
         border-radius: 0 0 8px 8px;
         box-shadow: 3px 0 10px rgba(0,0,0,0.5);
-        padding: 20px;
+        padding: 60px 20px;
         transition: left 0.4s ease;
         z-index: 1000;
     }
