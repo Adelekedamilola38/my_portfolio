@@ -764,13 +764,14 @@ footer {
 
 
 @media (max-width: 768px) {
-
-    .logo {
-        display: none;
-    }
     .burger {
         display: block;
+        margin-right: 12px;
         z-index: 1100;
+    }
+
+    .logo {
+        flex: 1;
     }
 
     .nav-links {
@@ -778,10 +779,11 @@ footer {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 0;
+        left: 0;
         background: rgba(15, 32, 39, 0.95);
-        width: 200px;
-        border-radius: 0 6px 12px rgba(0,0,0,0.4);
+        width: 220px;
+        border-radius: 0 8px 8px 0;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.4);
         padding: 15px;
     }
 
@@ -791,7 +793,7 @@ footer {
 
     .nav-links li {
         margin: 10px 0;
-        text-align: right;
+        text-align: left;
     }
 
     .nav-links li a {
