@@ -771,7 +771,7 @@ footer {
     }
 
     .logo {
-        flex: 1;
+        position: relative;
     }
 
     .nav-links {
