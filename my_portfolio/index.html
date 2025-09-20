@@ -16,9 +16,11 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#hero">HOME</a></li>
-            <li><a href="#about-me">ABOUT</a></li>
-            <li><a href="#projects-section">PROJECTS</a></li>
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#about-us">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
 
@@ -36,25 +38,34 @@
 
     </nav>
 
-    <header class="hero">
-        <h2>Hello, <span>I'm</span></h2>
-        <h1><span>ADELEKE DAMILOLA</span></h1>
-        <p>Full-Stack Product Developer</p>
-        <button class="cta-btn" id="click-btn">View My Card Designs</button>
-    </header>
+    <section class="hero" id="HOME">
+        <div class="hero-design">
+            <h2>Hello, <span>I'm</span></h2>
+            <h1><span>ADELEKE DAMILOLA</span></h1>
+            <p>Full-Stack Product Developer</p>
+        </div>
 
-    <div class="hero-image">
-        <img src="images/Senate-building.jpg" alt="Unilag Senate building picture">
-    </div>
+        <div class="profile-pic">
+            <img id="slideshow" src="images/my_profile_pic.jpg" alt="profilePic">
+        </div>
+    </section>
 
-    <div class="about-me">
-        <h3>About Us</h3>
-        <p>A graduate of Bachelor of Science in Insurance; <span>University of Lagos, Nigeria.</span>
-        <br>Developer with a strong foundation in <b>back-end development</b> and also have a good knowledge of <b>front-end developement, </b>and <b>UI/UX.</b> Specializes in various language skills such as; <span>Figma, HTML, CSS, Javascripts, React, Python, Django, SQL.</span>
-    </p>
-    </div>
 
-    <section class="services-section" aria-labelledby="services-title">
+    <section id="about-us" class="aboutUs">
+        <div class="aboutUs-image">
+            <img src="images/Senate-building.jpg" alt="Unilag Senate building picture">
+        </div>
+
+        <div class="about-me" >
+            <h3>About Us</h3>
+            <p>A graduate of Bachelor of Science in Insurance; <span>University of Lagos, Nigeria.</span>
+            <br>Developer with a strong foundation in <b>back-end development</b> and also have a good knowledge of <b>front-end developement, </b>and <b>UI/UX.</b> Specializes in various language skills such as; <span>Figma, HTML, CSS, Javascripts, React, Python, Django, SQL.</span></p>
+        </div>
+    </section>
+
+    
+
+    <section class="services-section" aria-labelledby="services-title" id="services">
         <div class="services-container">
             <h2 id="services-title" class="section-title">What I Do</h2>
             <p class="section-sub">My <span>services</span></p>
@@ -104,7 +115,7 @@
         </div>
     </section>
 
-    <section class="projects-section">
+    <section class="projects-section" id="project">
         <h2><span>Projects</span> I have done</h2>
         <p>These are the project i have created.</p>
 
@@ -140,56 +151,47 @@
         </div>        
     </section>
 
-    <section id="experience">
-        <h2>Work <span>Experience</span></h2>
+    <section id="experience" class="experience-section">
+        <h2 class="experience-title">Work <span>Experience</span></h2>
 
-        <div class="timeline">
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>QA Collaboration - Discord Testing Team</h3>
-                    <span class="timeline-date">Remote</span>
-                    <ul>
-                        <li>Worked in a distributed test team alongside a software engineer using Discord for coordination.</li>
-                        <li>Perfomed <b>manuel functional testing</b> on a web applications, identifying and documenting bugs.</li>
-                        <li>Collaborated with the team to log issues clearly for fixes.</li>
-                        <li>Retested builds to confirm bug resolution and feature stability.</li>
-                        <li>Gained hands-on experience in <b>team-based QA workflows</b> and agile-style communication.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Data Annotation Projects</h3>
-                    <span class="timeline-date">Independent Contributor</span>
-                    <ul>
-                        <li>Completed <b>annotation tasks</b> for AI datasets with focus on accuracy and consistency.</li>
-                        <li>Followed structured guidelines to prepare high-quality labeled data for model training.</li>
-                        <li>Learned the importance of <b>attention to detail and data integrity</b> in AI workflows.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>UI/UX Design & Logo Design - Figma/Canva</h3>
-                    <span class="timeline-date">Designer</span>
-                    <ul>
-                        <li>Created <b>user interface mockups</b> and layouts in Figma for personal apps and websites.</li>
-                        <li>Experimented with <b>design systems, color palettes, and typography</b>.</li>
-                        <li>Improved visual design usability through multiple iterations.</li>
-                        <li>Designed logos and branding assets for personal projects.</li>
-                        <li>Built a consistent identity across project presentations and portfolio.</li>
-                        <li>Practiced <b>basic graphic design principles</b> (balance, contrast, color harmony).</li>
-                    </ul>
-                </div>
-            </div>
-        
+        <div class="experience-card">
+            <h3>QA Collaboration - Discord Testing Team</h3>
+            <span class="exp-role">Remote</span>
+            <ul>
+                <li>Worked in a distributed test team alongside a software engineer using Discord for coordination.</li>
+                <li>Perfomed <b>manuel functional testing</b> on a web applications, identifying and documenting bugs.</li>
+                <li>Collaborated with the team to log issues clearly for fixes.</li>
+                <li>Retested builds to confirm bug resolution and feature stability.</li>
+                <li>Gained hands-on experience in <b>team-based QA workflows</b> and agile-style communication.</li>
+            </ul>
         </div>
+            
+        <div class="experience-card">
+            <h3>Data Annotation Projects</h3>
+            <span class="exp-role">Independent Contributor</span>
+            <ul>
+                <li>Completed <b>annotation tasks</b> for AI datasets with focus on accuracy and consistency.</li>
+                <li>Followed structured guidelines to prepare high-quality labeled data for model training.</li>
+                <li>Learned the importance of <b>attention to detail and data integrity</b> in AI workflows.</li>
+            </ul>
+        </div>
+    
+
+        <div class="experience-card">
+            <h3>UI/UX Design & Logo Design - Figma/Canva</h3>
+            <span class="exp-role">Designer</span>
+            <ul>
+                <li>Created <b>user interface mockups</b> and layouts in Figma for personal apps and websites.</li>
+                <li>Experimented with <b>design systems, color palettes, and typography</b>.</li>
+                <li>Improved visual design usability through multiple iterations.</li>
+                <li>Designed logos and branding assets for personal projects.</li>
+                <li>Built a consistent identity across project presentations and portfolio.</li>
+                <li>Practiced <b>basic graphic design principles</b> (balance, contrast, color harmony).</li>
+            </ul>
+        </div>
+
+        
     </section>
 
     <section class="contact" id="contact">

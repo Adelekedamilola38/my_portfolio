@@ -54,20 +54,6 @@ document.addEventListener("click", (e) => {
     }
 });
 
-// button click event
-document.getElementById("click-btn").addEventListener("click", function() {
-    window.location.href = "card-demo.html"; // replace #work with your actual work section ID
-});
-
-// add hover effect to button
-const button = document.getElementById("click-btn");
-button.addEventListener("mousedown", function() {
-    button.style.transform = "scale(0.95)";
-});
-
-button.addEventListener("mouseup", function() {
-    button.style.transform = "scale(1)";
-});
 
 let counter = 1;
 let slider = document.querySelector(".slider");
@@ -81,3 +67,48 @@ function autoPlay() {
 
 slider.addEventListener("mouseenter", () => clearInterval(interval));
 slider.addEventListener("mouseenter", () => interval = setInterval(autoPlay, 5000));
+
+const images = [
+    "images/my_profile_pic.jpg",
+    "images/my_profile_pic2.jpg",
+    "images/my_profile_pic3.jpg",
+    "images/my_profile_pic4.jpg"
+];
+
+let index = 0;
+const slideshow = document.getElementById("slideshow");
+
+setInterval(() => {
+    index = (index + 1) % images.length;
+    slideshow.style.opacity = 0;
+    setTimeout(() => {
+        slideshow.src = images[index];
+        slideshow.style.opacity = 1;
+    }, 500);
+}, 5000);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const section = document.querySelector(".experience-section");
+    const starContainer = document.createElement("div");
+    starContainer.classList.add("stars");
+    section.appendChild(starContainer);
+
+    for (let i = 0; i < 25; i++) {
+        const star = document.createElement("div");
+        star.classList.add("star");
+        star.style.top = '${Math.random() * 100}%';
+        star.style.left = '${Math.random() * 100}%';
+        starContainer.appendChild(star);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            starContainer.style.opacity = entry.isIntersecting ? "1" : "0";
+            starContainer.style.transition = "opacity is ease";
+        });
+    }, { threshold: 0.3});
+
+    observer.observe(section);
+
+});
