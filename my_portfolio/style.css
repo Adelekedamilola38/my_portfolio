@@ -792,7 +792,7 @@ footer {
         top: 0;
         left: 0;
         width: 100%;
-        background: rgba(15, 32, 39, 0.95);
+        background: rgba(225, 255, 255, 0.1);
         z-index: 1001;
     }
 
@@ -814,7 +814,7 @@ footer {
         position: fixed;
         top: 60px;
         left: -300px;
-        background: rgba(15, 32, 39, 0.98);
+        background: rgba(225, 255, 255, 0.1);
         width: 240px;
         height: calc(100%-60px);
         padding: 20px;
