@@ -863,12 +863,18 @@ footer {
     .hero-design h2 {
         font-size: 2rem;
         position: absolute;
-        top: 50px;
+        top: 70px;
     }
 
     .hero-design h1 {
         font-size: 1.5rem;
-        margin-bottom: 10px;
+        position: absolute;
+        top: 90px;
+    }
+
+    .hero-design p {
+        position: absolute;
+        top: 100px;
     }
 
     .profile-pic img {
