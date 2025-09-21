@@ -827,7 +827,7 @@ footer {
     .search-container {
         position: absolute;
         top: 12px;
-        right: 120px;
+        left: auto;
     }
 
     .search-container.active .search-input {
