@@ -849,7 +849,8 @@ footer {
         align-items: center;
         position: relative;
         overflow: hidden;
-        margin-top: 20px;
+        position: relative;
+        bottom: 20px;
     }
 
     .hero::after {
