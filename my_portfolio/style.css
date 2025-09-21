@@ -775,8 +775,9 @@ footer {
     /* Navbar */
     .navbar {
         flex-direction: row;
-        padding: 8px 12px;
+        padding: 8px 15px;
         width: 100%;
+        justify-content: space-between;
     }
 
     .nav-links {
@@ -802,10 +803,22 @@ footer {
         padding: 10px 0;
     }
 
+
     /* Burger Menu */
     .burger {
         display: flex;
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .logo h3 {
+        font-size: 1rem;
+        padding-left: 0px;
     }
 
     /* Search */
@@ -835,6 +848,7 @@ footer {
 
     .hero-design h2 {
         font-size: 2rem;
+        margin-bottom: 20px;
     }
 
     .hero-design h1 {
