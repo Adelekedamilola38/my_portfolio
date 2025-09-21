@@ -873,6 +873,8 @@ footer {
     .profile-pic img {
         width: 220px;
         height: 220px;
+        position: absolute;
+        top: 20px;
     }
 
     /* About Us */
