@@ -814,7 +814,7 @@ footer {
         display: flex;
         align-items: center;
         gap: 8px;
-        position: absolute;
+        position: relative;
         left: 40px;
     }
 
