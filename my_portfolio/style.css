@@ -818,7 +818,7 @@ footer {
 
     .logo h3 {
         font-size: 1rem;
-        padding-left: 0px;
+        padding-right: 0px;
     }
 
     /* Search */
@@ -865,7 +865,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .hero-design h2 {
