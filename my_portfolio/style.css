@@ -815,7 +815,7 @@ footer {
         align-items: center;
         gap: 8px;
         position: relative;
-        left: 40px;
+        padding-left: 40px;
     }
 
     .logo h3 {
