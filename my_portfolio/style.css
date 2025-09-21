@@ -813,7 +813,7 @@ footer {
         position: fixed;
         top: 60px;
         left: -300px;
-        background: #00b3cc;
+        background: #f0f0f0;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         width: 240px;
@@ -829,12 +829,12 @@ footer {
     }
 
     .nav-links li {
-        margin: 18px 0;
+        margin: 8px 0;
         text-align: left;
     }
 
     .nav-links li a {
-        color: #fff;
+        color: #0f2027;
         font-size: 15px;
         text-decoration: none;
     }
@@ -847,7 +847,7 @@ footer {
         height: calc(100%-60px);
         background: rgba(0,0,0,0.4);
         display: none;
-        z-index: 999;
+        z-index: 998;
     }
 
     .overlay.show {
