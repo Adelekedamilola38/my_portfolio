@@ -843,12 +843,13 @@ footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 30px 15px;
+        padding: 20px 10px;
         gap: 20px;
         min-height: 100vh;
         align-items: center;
         position: relative;
         overflow: hidden;
+        margin-top: 20px;
     }
 
     .hero::after {
@@ -857,10 +858,6 @@ footer {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 120px;
-        background: #00b3cc;
-        clip-path: polygon(0 100%, 100% 0, 100% 100%);
-        z-index: 1;
     }
 
     .hero-design h2 {
