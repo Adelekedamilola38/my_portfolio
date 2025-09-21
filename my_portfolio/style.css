@@ -811,13 +811,13 @@ footer {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 60px;
+        top: 50px;
         left: -300px;
-        background: #f0f0f0;
+        background: rgba(225, 255, 255, 0.1);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         width: 240px;
-        height: calc(100%-60px);
+        height: calc(100%-50px);
         padding: 20px;
         transition: left 0.4s ease;
         z-index: 1000;
@@ -829,22 +829,22 @@ footer {
     }
 
     .nav-links li {
-        margin: 8px 0;
+        margin: 12px 0;
         text-align: left;
     }
 
     .nav-links li a {
-        color: #0f2027;
+        color: #fff;
         font-size: 15px;
         text-decoration: none;
     }
 
     .overlay {
         position: fixed;
-        top: 60px;
+        top: 50px;
         left: 0;
         width: 100%;
-        height: calc(100%-60px);
+        height: calc(100%-50px);
         background: rgba(0,0,0,0.4);
         display: none;
         z-index: 998;
