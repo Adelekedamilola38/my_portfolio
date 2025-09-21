@@ -827,7 +827,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 78px;
+        top: 75px;
         left: -300px;
         background: rgba(15, 32, 39, 0.98);
         width: 240px;
