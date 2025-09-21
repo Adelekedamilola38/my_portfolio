@@ -813,7 +813,7 @@ footer {
         position: fixed;
         top: 60px;
         left: -300px;
-        background: rgba(0,0,0,0.98);
+        background: #00b3cc;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         width: 240px;
