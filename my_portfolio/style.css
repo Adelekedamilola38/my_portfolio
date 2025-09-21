@@ -874,7 +874,7 @@ footer {
         width: 220px;
         height: 220px;
         position: absolute;
-        top: 20px;
+        bottom: 20px;
     }
 
     /* About Us */
