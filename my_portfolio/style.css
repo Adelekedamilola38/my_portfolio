@@ -812,13 +812,13 @@ footer {
 
     .logo {
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 
     .logo h3 {
         font-size: 1rem;
         position: relative;
-        left: 40px;
     }
 
     /* Search */
