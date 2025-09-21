@@ -759,7 +759,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     width: 28px;
-    height: 28px;
+    height: 22px;
     cursor: pointer;
     z-index: 1001;
 }
@@ -784,9 +784,23 @@ footer {
 
 
 @media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px;
+    }
+
+
     .burger {
-        display: block;
-        margin-right: 5px;
+        display: flex;
+        margin-right: 12px;
+    }
+
+    .logo {
+        flex: 1;
+        text-align: center;
+        color: #fff;
     }
 
     .nav-links {
@@ -794,33 +808,28 @@ footer {
         flex-direction: column;
         position: fixed;
         top: 0;
-        left: -300px;
+        left: -260px;
         background: rgba(15, 32, 39, 0.98);
         width: 240px;
         height: 100%;
-        border-radius: 0 0 8px 8px;
-        box-shadow: 3px 0 10px rgba(0,0,0,0.5);
         padding: 60px 20px;
         transition: left 0.4s ease;
         z-index: 1000;
     }
 
-    .logo {
-        flex: 1;
-    }
 
     .nav-links.show {
         left: 0;
     }
 
     .nav-links li {
-        margin: 15px 0;
+        margin: 18px 0;
         text-align: left;
     }
 
     .nav-links li a {
         color: #fff;
-        font-size: 14px;
+        font-size: 15px;
         text-decoration: none;
     }
 
