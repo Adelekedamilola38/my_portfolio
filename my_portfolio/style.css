@@ -803,9 +803,8 @@ footer {
     }
 
     .logo {
-        flex: 1;
-        text-align: center;
-        color: #fff;
+        position: relative;
+        left: auto;
     }
 
     .nav-links {
@@ -814,7 +813,7 @@ footer {
         position: fixed;
         top: 60px;
         left: -300px;
-        background: rgba(29, 34, 34, 0.1);
+        background: rgba(0,0,0,0.98);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         width: 240px;
