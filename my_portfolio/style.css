@@ -815,7 +815,7 @@ footer {
         align-items: center;
         gap: 8px;
         position: relative;
-        left: 40px;
+        right: 40px;
     }
 
     .logo h3 {
@@ -827,7 +827,7 @@ footer {
     .search-container {
         position: absolute;
         top: 12px;
-        right: 80px;
+        right: 120px;
     }
 
     .search-container.active .search-input {
