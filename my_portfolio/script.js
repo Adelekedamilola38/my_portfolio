@@ -1,5 +1,9 @@
-const searchInput = document.getElementById("searchInput");
+const searchIcon = document.querySelector('.search-icon');
+const searchContainer = document.querySelector('.search-container');
+const searchInput = document.querySelector('.search-input');
+const searchBtn = document.querySelector('.search-btn')
 const suggestionsList = document.getElementById("suggestions");
+
 
 const data = [
     "JavaScript Basics",
@@ -12,19 +16,27 @@ const data = [
     "Web Development",
     "Frontend Frameworks",
     "Backend Development",
-    "Fontend Projects",
+    "Frontend Projects",
     "Fullstack Development",
     "Google Search Clone",
     "Tailwind CSS Tips",
-    "HTML Best Pactices",
-    "Css Grid Layout",
+    "HTML Best Practices",
+    "CSS Grid Layout",
 ];
 
+//show input when clicking icon
+searchIcon.addEventListener('click', () => {
+    searchContainer.classList.add('active');
+    searchInput.focus();
+});
+
+// suggestions filter on typing
 searchInput.addEventListener("input", () => {
     const query = searchInput.value.trim().toLowerCase();
     suggestionsList.innerHTML = "";
 
-    if (query.trim() === "") {
+    
+    if (query === "") {
         suggestionsList.classList.remove("show");
         return;
     }
@@ -49,10 +61,19 @@ searchInput.addEventListener("input", () => {
 });
 
 document.addEventListener("click", (e) => {
-    if (!e.target.closest(".search-wrapper")) {
+    if (!e.target.closest(".search-container")) {
         suggestionsList.classList.remove("show");
+        searchInput.value = '';
+        searchContainer.classList.remove("active");
+
     }
 });
+
+searchBtn.addEventListener("click", () => {
+    searchContainer.classList.remove('active');
+    searchInput.value = '';
+    suggestionsList.classList.remove('show');
+})
 
 
 let counter = 1;
@@ -63,7 +84,7 @@ function autoPlay() {
     document.getElementById("radio" + counter).checked = true;
     counter++;
     if (counter > 3) counter = 1;
-}
+};
 
 slider.addEventListener("mouseenter", () => clearInterval(interval));
 slider.addEventListener("mouseenter", () => interval = setInterval(autoPlay, 5000));
@@ -111,4 +132,4 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         navLinks.classList.remove("show");
         overlay.classList.remove("show");
     });
-});
+})
