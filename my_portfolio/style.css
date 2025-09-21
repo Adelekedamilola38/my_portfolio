@@ -811,13 +811,13 @@ footer {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 50px;
+        top: 70px;
         left: -300px;
         background: rgba(225, 255, 255, 0.1);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         width: 240px;
-        height: calc(100%-50px);
+        height: calc(100%-70px);
         padding: 20px;
         transition: left 0.4s ease;
         z-index: 1000;
@@ -841,10 +841,10 @@ footer {
 
     .overlay {
         position: fixed;
-        top: 50px;
+        top: 70px;
         left: 0;
         width: 100%;
-        height: calc(100%-50px);
+        height: calc(100%-70px);
         background: rgba(0,0,0,0.4);
         display: none;
         z-index: 998;
