@@ -841,14 +841,14 @@ footer {
     /* Hero */
     .hero {
         flex-direction: column;
-        padding: 20px;
+        padding: 30px 15px;
         gap: 20px;
         height: auto;
     }
 
     .hero-design h2 {
         font-size: 2rem;
-        margin-bottom: 20px;
+        margin-bottom: -20px;
     }
 
     .hero-design h1 {
