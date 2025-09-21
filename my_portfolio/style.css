@@ -814,7 +814,7 @@ footer {
         position: fixed;
         top: 60px;
         left: -300px;
-        background: rgba(225, 255, 255, 0.1);
+        background: rgba(29, 34, 34, 0.1);
         width: 240px;
         height: calc(100%-60px);
         padding: 20px;
