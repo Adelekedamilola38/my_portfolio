@@ -815,6 +815,8 @@ footer {
         top: 60px;
         left: -300px;
         background: rgba(29, 34, 34, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         width: 240px;
         height: calc(100%-60px);
         padding: 20px;
