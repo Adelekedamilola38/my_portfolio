@@ -862,6 +862,8 @@ footer {
 
     .hero-design h2 {
         font-size: 2rem;
+        position: absolute;
+        top: 50px;
     }
 
     .hero-design h1 {
