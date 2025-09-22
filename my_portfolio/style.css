@@ -981,7 +981,7 @@ footer {
 
     /* Projects */
     .project-card {
-        width: calc(100% / 3 - 50px);
+        width: calc(100% / 3);
         margin: 0 10px;
     }
 
