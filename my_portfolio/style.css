@@ -973,6 +973,7 @@ footer {
     .contact-container {
         flex-direction: column;
         gap: 20px;
+        height: 100vh;
     }
 
     .contact-form, .contact-info {
