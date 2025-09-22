@@ -976,9 +976,7 @@ footer {
     }
 
     .contact-form, .contact-info {
-        display: flex;
-        align-items: center;
-        width: 80%;
+        width: 90%;
     }
 
     /* Footer */
