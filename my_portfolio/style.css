@@ -64,6 +64,11 @@ img {
     color: #00d8ff;
 }
 
+.nav-links a.active {
+    color: #ff5733;
+    font-weight: bold;
+}
+
 .search-container {
     position: relative;
     display: inline-block;

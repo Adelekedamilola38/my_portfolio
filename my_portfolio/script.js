@@ -136,4 +136,32 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         navLinks.classList.remove("show");
         overlay.classList.remove("show");
     });
-})
+});
+
+const sections = document.querySelectorAll("section");
+const navLinksA = document.querySelectorAll(".nav-links a");
+
+const options = {
+  root: null,
+  threshold: 0.6 // highlight when 60% of section is visible
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute("id");
+
+      navLinksA.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + id) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+}, options);
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+
