@@ -274,7 +274,7 @@ img {
     text-align: center;
     line-height: 1.6;
     padding: 20px;
-    margin: 40px auto;
+    margin-right: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 }
@@ -932,7 +932,7 @@ footer {
 
     .service-card {
         margin: 0 auto;
-        width: 100%;
+        width: 80%;
     }
 
     /* Projects */
