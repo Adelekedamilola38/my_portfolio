@@ -956,7 +956,7 @@ footer {
     .aboutUs-image img {
         margin: 40px auto;
         max-width: 150px;
-        height: auto;
+        height: 100px;
         position: relative;
         top: 40px;
     }
