@@ -836,7 +836,7 @@ footer {
 
     .search-btn {
         position: absolute;
-        top: 0;
+        top: 20px;
         padding: 5px 7px;
     }
 
