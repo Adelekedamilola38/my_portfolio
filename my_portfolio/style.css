@@ -852,8 +852,9 @@ footer {
 
     .suggestions-list {
         width: 180px;
-        right: 0;
-        top: 40px;
+        right: 20px;
+        top: 50px;
+        left: auto;
     }
 
     /* Hero */
