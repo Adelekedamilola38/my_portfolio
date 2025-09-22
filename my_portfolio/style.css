@@ -984,6 +984,9 @@ footer {
         width: calc(100% / 3);
         margin: 0 10px;
     }
+    .project-card img {
+        object-fit: cover;
+    }
 
     .project-card h3 {
         font-size: 10px;
