@@ -85,12 +85,13 @@ let interval = setInterval(autoPlay, 5000);
 
 function autoPlay() {
     document.getElementById("radio" + counter).checked = true;
+    slider.style.transform = 'translateX(-${(counter - 1) * 100}%)';
     counter++;
     if (counter > 3) counter = 1;
 };
 
 slider.addEventListener("mouseenter", () => clearInterval(interval));
-slider.addEventListener("mouseenter", () => interval = setInterval(autoPlay, 5000));
+slider.addEventListener("mouseleave", () => interval = setInterval(autoPlay, 5000));
 
 const images = [
     "images/my_profile_pic.jpg",

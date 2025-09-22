@@ -469,8 +469,7 @@ img {
 
 .slides {
     display: flex;
-    width: 100%;
-    transition: transform 0.6s ease;
+    transition: transform 0.6s ease-in-out;
 }
 
 .slides-group {
@@ -510,7 +509,7 @@ input[name="slider"] {
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin: 10px;
+    margin: 6px;
     border-radius: 50%;
     background: #888;
     cursor: pointer;
@@ -531,10 +530,10 @@ input:checked + label.bar {
     transform: translateX(0);
 }
 #radio2:checked ~ .slides {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
 }
 #radio3:checked ~ .slides {
-    transform: translateX(-200%);
+    transform: translateX(-400%);
 }
 
 #radio1:checked ~ .navigation label[for="radio1"],
@@ -944,11 +943,17 @@ footer {
     .slider {
         position: relative;
         margin: auto;
+        width: 300px;
     }
 
     .slides {
         display: flex;
         transition: transform 0.6s ease;
+    }
+
+    .slides-group {
+        display: flex;
+        justify-content: center;
     }
 
     .bar {
