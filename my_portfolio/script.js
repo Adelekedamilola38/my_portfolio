@@ -143,7 +143,7 @@ const navLinksA = document.querySelectorAll(".nav-links a");
 
 const options = {
   root: null,
-  threshold: 0.6 // highlight when 60% of section is visible
+  threshold: 0.5 // highlight when 60% of section is visible
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -165,3 +165,24 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+        alert("Message sent successfully ✅");
+        form.reset();
+    } else {
+        alert("Oops! Something went wrong ❌");
+    }
+});

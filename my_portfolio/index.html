@@ -277,11 +277,11 @@
 
         <div class="contact-container">
 
-            <form  class="contact-form">
-                <input type="text" name=""  placeholder="Your Name" required>
-                <input type="text" name="" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/mnngakjk" method="POST">
+                <input type="text" name="name"  placeholder="Your Full_Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
             </form>
 
             <div class="contact-info">
