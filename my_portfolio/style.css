@@ -482,17 +482,62 @@ img {
 
 .project-card {
     background: #2a2a3b;
-    border-radius: 8px;
-    margin: 0 30px;
-    width: calc(100% / 3 - 20px);
+    border-radius: 10px;
+    margin: 20px;
+    width: calc(100% / 3 - 100px);
     box-sizing: border-box;
-    flex-shrink: 0;
     margin-top: 20px;
+    background: rgb(0, 0, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 255, 255, 0.5);
 }
 
 .project-card img {
     width: 100%;
     border-radius: 5px;
+    height: 150px;
+    border-bottom: 2px solid rgba(225, 255, 255, 0.1);
+}
+
+.project-card h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-card p {
+    font-size: 10px;
+    color: #dcdcdc;
+    margin-bottom: 15px;
+    margin: 20px;
+}
+
+.cta-btn {
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: rgba(0, 179, 204, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: open;
+    margin-top: auto;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+    background: #00b3cc;
+    transform: scale(1.05);
 }
 
 input[name="slider"] {
@@ -509,13 +554,13 @@ input[name="slider"] {
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin: 6px;
+    margin: 10px;
     border-radius: 50%;
     background: #888;
     cursor: pointer;
     transition: 0.3s;
     position: relative;
-    top: 300px;
+    top: 20px;
 }
 
 .bar:hover {
@@ -530,10 +575,10 @@ input:checked + label.bar {
     transform: translateX(0);
 }
 #radio2:checked ~ .slides {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
 }
 #radio3:checked ~ .slides {
-    transform: translateX(-400%);
+    transform: translateX(-200%);
 }
 
 #radio1:checked ~ .navigation label[for="radio1"],
