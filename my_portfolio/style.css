@@ -985,14 +985,18 @@ footer {
         margin: 0 10px;
     }
     .project-card img {
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .project-card h3 {
         font-size: 10px;
     }
     .project-card p {
-        font-size: 5px;
+        font-size: 8px;
+    }
+
+    .cta-btn {
+        padding: 4px;
     }
 
     .slider {
