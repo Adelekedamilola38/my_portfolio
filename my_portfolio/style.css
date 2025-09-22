@@ -650,7 +650,7 @@ input:checked + label.bar {
     margin-bottom: 40px;
 }
 
-.contact .subtitle span {
+.contact h2 span {
     color: #00d8ff;
 }
 
