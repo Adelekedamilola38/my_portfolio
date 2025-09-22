@@ -919,8 +919,10 @@ footer {
     }
 
     .about-me {
-        padding: 15px;
-        font-size: 14px;
+        padding: 12px;
+        font-size: 12px;
+        margin-top: 10px;
+        text-align: center;
     }
 
     /* Services */
