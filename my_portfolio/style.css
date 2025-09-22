@@ -907,13 +907,15 @@ footer {
     .aboutUs {
         flex-direction: column;
         padding: 30px 15px;
-        height: auto;
+        height: 100vh;
     }
 
     .aboutUs-image img {
-        margin: 20px auto;
+        margin: 40px auto;
         max-width: 150px;
         height: auto;
+        position: relative;
+        top: 40px;
     }
 
     .about-me {

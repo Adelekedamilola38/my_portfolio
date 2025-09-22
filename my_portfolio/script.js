@@ -22,6 +22,9 @@ const data = [
     "Tailwind CSS Tips",
     "HTML Best Practices",
     "CSS Grid Layout",
+    "Project",
+    "Portfolio",
+    "Experience",
 ];
 
 //show input when clicking icon
