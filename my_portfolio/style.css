@@ -831,7 +831,11 @@ footer {
 
     .search-input {
         position: relative;
-        top: 0;
+        top: 12px;
+    }
+
+    .search-btn {
+        padding: 3px 5px;
     }
 
     .search-container.active .search-input {
