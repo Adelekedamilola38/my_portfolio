@@ -800,20 +800,20 @@ footer {
 }
 
 .overlay {
-        position: fixed;
-        top: 75;
-        left: 0;
-        width: 100%;
-        height: calc(100%-60px);
-        background: rgba(0,0,0,0.4);
-        display: none;
-        z-index: 998;
-    }
+    position: fixed;
+    top: 75;
+    left: 0;
+    width: 100%;
+    height: calc(100%-60px);
+    background: rgba(0,0,0,0.4);
+    display: none;
+    z-index: 998;
+}
 
-    .overlay.show {
-        display: block;
-        margin-right: 12px;
-    }
+.overlay.show {
+    display: block;
+    margin-right: 12px;
+}
 
 
 /* =========================
